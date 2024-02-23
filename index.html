@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="screen">
+        <span id="resultado">0</span>
+    </div>
+    <br>
+    <section class="Calculadora">
+
+        <section class="Botonera">
+            <div class="delete"> 
+                <button id="7" onclick="boton('7')">7</button>
+                <button onclick="boton('8')">8</button>
+                <button onclick="boton('9')">9</button>
+                <button style="background-color: #76FF03; border-bottom: 4px solid rgba(0, 0, 0, 0.4);" class="del" 
+                onclick="Delete('DEL')">DEL</button>
+            </div>
+
+            <div class="suma">
+                <button onclick="boton('4')">4</button>
+                <button onclick="boton('5')">5</button>
+                <button onclick="boton('6')">6</button>
+                <button onclick="operacion('+')">+</button>
+            </div>
+
+            <div class="resta">
+                <button onclick="boton('1')">1</button>
+                <button onclick="boton('2')">2</button>
+                <button onclick="boton('3')">3</button>
+                <button onclick="operacion('-')">-</button>
+            </div>
+
+            <div class="mult">
+                <button onclick="boton('.')">.</button>
+                <button onclick="boton('0')">0</button>
+                <button onclick="operacion('/')">/</button>
+                <button onclick="operacion('*')">x</button>
+            </div>
+
+            <div class="reset">
+                <button style="background-color: #D12030; border-bottom: 4px solid rgba(0, 0, 0, 0.3);"  class="res"
+                onclick="limpiar('RESET')">RESET</button>
+                <button style="background-color: #76FF03; border-bottom: 4px solid rgba(0, 0, 0, 0.4);" class="igual"
+                onclick="calcular('=')">=</button>
+            </div>
+        </section>
+    </section>
+    <script src="./funciones.js"></script>
+</body>
+</html>
