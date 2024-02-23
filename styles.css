@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
-    background-color: #B9C0D4;
+    background-color: #B93;
 }
 
 .Calculadora{
@@ -49,8 +49,8 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.botondel{
-    background-color: #101323;
+.Botonera button:hover{
+    background-color: wheat;
 }
 
 .delete button{
